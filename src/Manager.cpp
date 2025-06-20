@@ -7,7 +7,7 @@ void Manager::Register()
 
 void Manager::LoadSettings()
 {
-	constexpr auto path = L"Data/SKSE/Plugins/po3_DynamicLocationNamePopupss.ini";
+	constexpr auto path = L"Data/SKSE/Plugins/po3_DynamicLocationNamePopups.ini";
 
 	CSimpleIniA ini;
 	ini.SetUnicode();
