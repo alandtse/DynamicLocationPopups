@@ -72,7 +72,7 @@ void Manager::SendLocationPopup(RE::MapMarkerData* a_mapMarkerData)
 RE::BSEventNotifyControl Manager::ProcessEvent(const RE::LocationDiscovery::Event* a_event, RE::BSTEventSource<RE::LocationDiscovery::Event>*)
 {
 	if (a_event) {
-		GetLocationOnEntry(a_event->mapMarkerData); // so we don't trigger two popups if the player discovers a location and then moves back into map marker range
+		GetLocationOnEntry(a_event->mapMarkerData);  // so we don't trigger two popups if the player discovers a location and then moves back into map marker range
 	}
 
 	return RE::BSEventNotifyControl::kContinue;
