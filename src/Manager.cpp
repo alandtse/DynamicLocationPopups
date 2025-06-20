@@ -14,8 +14,8 @@ void Manager::LoadSettings()
 
 	ini.LoadFile(path);
 
-	ini::get_value(ini, mode, "Settings", "iMode", "Triggers location popup when:\n; 0 - Entering any new location\n; 1 - Entering a location different from the current or last visited");
-	ini::get_value(ini, muteJingle, "Settings", "bMuteJingle", nullptr);
+	ini::get_value(ini, mode, "Settings", "iMode", ";Triggers location popup when:\n;0 - Entering any new location.\n;1 - Entering a location different from the current or last visited.");
+	ini::get_value(ini, muteJingle, "Settings", "bMuteJingle", ";Mute discovery music jingle when entering a location.");
 
 	(void)ini.SaveFile(path);
 }
