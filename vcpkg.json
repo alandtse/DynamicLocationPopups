@@ -1,0 +1,14 @@
+{
+  "name": "dynamic-location-popups",
+  "version-string": "1.0.0",
+  "description": "",
+  "homepage": "",
+  "license": "MIT",
+  "dependencies": [
+    "clib-util",
+    "rsm-binary-io",
+    "spdlog",
+    "xbyak"
+  ],
+  "builtin-baseline": "16c71a39e5a0fc0bdb3fad03beef8f38ee00ee3b"
+}
