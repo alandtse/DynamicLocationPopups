@@ -5,12 +5,12 @@
 #define NOGDI
 
 #include "RE/Skyrim.h"
-#include "SKSE/SKSE.h"
 #include "REX/REX/Singleton.h"
+#include "SKSE/SKSE.h"
 
-#include <spdlog/sinks/basic_file_sink.h>
-#include <ClibUtil/string.hpp>
 #include <ClibUtil/simpleini.hpp>
+#include <ClibUtil/string.hpp>
+#include <spdlog/sinks/basic_file_sink.h>
 #include <xbyak/xbyak.h>
 
 #define DLLEXPORT __declspec(dllexport)

@@ -58,7 +58,7 @@ namespace Hooks
 	void Install()
 	{
 		Manager::GetSingleton()->LoadSettings();
-		
+
 		MapMarkerData__GetLocationName::Install();
 		SendHUDMessage__ShowLocationName::Install();
 		PushNotification::Install();

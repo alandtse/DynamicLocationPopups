@@ -60,7 +60,7 @@ void Manager::SendLocationPopup(RE::MapMarkerData* a_mapMarkerData)
 		if (auto hudData = static_cast<RE::HUDData*>(RE::UIMessageQueue::GetSingleton()->CreateUIMessageData(RE::InterfaceStrings::GetSingleton()->hudData))) {
 			showLocationPopUp = true;
 			lastMarkerType = a_mapMarkerData->type.get();
-			
+
 			hudData->type = RE::HUD_MESSAGE_TYPE::kLocationDiscovery;
 			hudData->typeData = a_mapMarkerData->type.underlying();
 			hudData->text = locName;
