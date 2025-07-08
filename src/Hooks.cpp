@@ -50,7 +50,7 @@ namespace Hooks
 
 		static void Install()
 		{
-			REL::Relocation<std::uintptr_t> target{ RELOCATION_ID(50721, 51653), OFFSET(0x559, 0x4E6) };  // HUDMenu::Process
+			REL::Relocation<std::uintptr_t> target{ RELOCATION_ID(50758, 51653), OFFSET(0x559, 0x4E6) };  // HUDMenu::Process
 			stl::write_thunk_call<PushNotification>(target.address());
 		}
 	};
